@@ -4,8 +4,12 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Col } from "react-bootstrap";
 
-const ExerciseList = ({ exercise, handleAddList }) => {
-    const {image, title, description, forAge, timeRequired } = exercise;
+const ExerciseList = ({ exercise, handleAddList, exerciseActivities }) => {
+    const { id, image, title, description, forAge, timeRequired } = exercise;
+
+    const exerciseListId = exerciseActivities.map(
+        (exerciseActivity) => exerciseActivity.id
+    );
 
     return (
         <Col lg={4} className="mb-4">
@@ -21,7 +25,14 @@ const ExerciseList = ({ exercise, handleAddList }) => {
                         Time required :{" "}
                         <span className="workout-time"> {timeRequired}s</span>
                     </Card.Text>
-                    <Button onClick={()=> handleAddList(exercise)}>Add To List</Button>
+                    <Button
+                        className={
+                            exerciseListId.includes(id) ? "addedToList" : ""
+                        }
+                        onClick={() => handleAddList(exercise)}
+                    >
+                        {exerciseListId.includes(id) ? "Added" : "Add To List"}
+                    </Button>
                 </Card.Body>
             </Card>
         </Col>

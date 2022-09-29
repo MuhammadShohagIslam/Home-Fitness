@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
 import ExerciseList from "../ExerciseList/ExerciseList";
 
-const Exercise = ({ exercises, handleAddList }) => {
+const Exercise = ({ exercises, handleAddList,exerciseActivities }) => {
     return (
         <div className="exercise-area">
             <h2 className="section-title mb-4">
@@ -24,6 +24,7 @@ const Exercise = ({ exercises, handleAddList }) => {
                                 exercise={exercise}
                                 handleAddList={handleAddList}
                                 key={exercise.id}
+                                exerciseActivities={exerciseActivities}
                             />
                         ))
                     ) : (

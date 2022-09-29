@@ -65,6 +65,7 @@ const FitnessClub = () => {
                     <Exercise
                         exercises={fitnessActivities}
                         handleAddList={handleAddList}
+                        exerciseActivities={exerciseActivities}
                     />
                 </Col>
                 <Col lg={3} className="pe-0 h-100 sticky-position">
