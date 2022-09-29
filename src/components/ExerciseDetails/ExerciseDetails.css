@@ -1,0 +1,44 @@
+.exercise-details-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+}
+.exercise-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 7px;
+    padding: 13px 19px;
+    margin-bottom: 13px;
+}
+.exercise-time h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.exercise-time p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.exercise-break-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 7px;
+    padding: 13px 19px;
+}
+.exercise-break-time h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.exercise-break-time p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 0px;
+}

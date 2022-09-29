@@ -1,17 +1,28 @@
 import React, { useEffect, useState } from "react";
 import { Row, Col } from "react-bootstrap";
+import { addToBreakTimeLocalStorage } from "../../utilities/localStorage";
 import Exercise from "../Exercise/Exercise";
 import Profile from "../Profile/Profile";
+import ToastAlert from "../ToastAlert/ToastAlert";
 import "./FitnessClub.css";
 
 const FitnessClub = () => {
     const [fitnessActivities, setFitnessActivities] = useState([]);
     const [exerciseActivities, setExerciseActivities] = useState([]);
+    const [breakTime, setBreakTime] = useState(0);
+    const [show, setShow] = useState(false);
+
+    const toggleShow = () => setShow(!show);
 
     useEffect(() => {
         fetch("fitnessActivities.JSON")
             .then((res) => res.json())
             .then((data) => setFitnessActivities(data));
+    }, []);
+
+    useEffect(() => {
+        const storeBreakTime = addToBreakTimeLocalStorage();
+        setBreakTime(storeBreakTime);
     }, []);
 
     const handleAddList = (seletedExerciseActivity) => {
@@ -42,6 +53,11 @@ const FitnessClub = () => {
         setExerciseActivities(newExerciseActivities);
     };
     console.log(exerciseActivities);
+
+    const handleAddToBreak = (seletedBreakTime) => {
+        setBreakTime(seletedBreakTime);
+        addToBreakTimeLocalStorage(seletedBreakTime);
+    };
     return (
         <div className="fitness-club-area">
             <Row className="m-0">
@@ -52,9 +68,16 @@ const FitnessClub = () => {
                     />
                 </Col>
                 <Col lg={3} className="pe-0 h-100 sticky-position">
-                    <Profile exerciseActivities={exerciseActivities} />
+                    <Profile
+                        exerciseActivities={exerciseActivities}
+                        handleAddToBreak={handleAddToBreak}
+                        breakTime={breakTime}
+                        toggleShow={toggleShow}
+                        show={show}
+                    />
                 </Col>
             </Row>
+            <ToastAlert show={show} toggleShow={toggleShow} />
         </div>
     );
 };
