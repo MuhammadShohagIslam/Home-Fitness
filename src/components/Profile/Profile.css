@@ -2,3 +2,14 @@
     background-color: #fff;
     padding: 30px;
 }
+
+@media only screen and (max-width: 767px) {
+    .pe-0.h-100.sticky-position.col-lg-3 {
+        padding-right: calc(var(--bs-gutter-x) * .5) !important
+    }
+    .profile-area {
+        background-color: #fff;
+        padding: 30px 12px;
+    }
+}
+ 

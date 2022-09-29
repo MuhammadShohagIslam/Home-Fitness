@@ -5,3 +5,9 @@
 .px-10{
     padding: 0px 129px !important;
 }
+
+@media only screen and (max-width: 767px) {
+    .px-10{
+        padding: 0px 12px !important;
+    }
+}

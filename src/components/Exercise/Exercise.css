@@ -8,4 +8,15 @@
     font-weight: 600;
     color: #A8AEBD;
 }
+@media only screen and (max-width: 767px) {
+    .section-title {
+        font-size: 26px;
+        text-align: center;
+    }
+    .section-description {
+        text-align: center;
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+}
  
