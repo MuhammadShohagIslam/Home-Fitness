@@ -3,6 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import { addToBreakTimeLocalStorage } from "../../utilities/localStorage";
 import Exercise from "../Exercise/Exercise";
 import Profile from "../Profile/Profile";
+import Blog from '../Blog/Blog';
 import ToastAlert from "../ToastAlert/ToastAlert";
 import "./FitnessClub.css";
 
@@ -67,6 +68,7 @@ const FitnessClub = () => {
                         handleAddList={handleAddList}
                         exerciseActivities={exerciseActivities}
                     />
+                    <Blog />
                 </Col>
                 <Col lg={3} className="pe-0 h-100 sticky-position">
                     <Profile
