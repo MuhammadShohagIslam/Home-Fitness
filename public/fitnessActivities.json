@@ -5,7 +5,7 @@
         "title": "Dumbbell Bench Press",
         "description": "Why it's on the list: Whether dumbbell or barbell presses them for better",
         "forAge": "18-25",
-        "timeRequired": "40"
+        "timeRequired": 40
     },
     {
         "id": "2",
@@ -13,7 +13,7 @@
         "title": "Incline Bench Press",
         "description": "bench press a classic way to build the upper chest, many lifters find them",
         "forAge": "20-30",
-        "timeRequired": "30"
+        "timeRequired": 30
     },
     {
         "id": "3",
@@ -21,7 +21,7 @@
         "title": "Decline Press",
         "description": "The common thinking on decline is that it's for lower chest only for hand",
         "forAge": "18-25",
-        "timeRequired": "35"
+        "timeRequired": 35
     },
     {
         "id": "4",
@@ -29,7 +29,7 @@
         "title": "Machine Chest Press",
         "description": "Free-weight pressing moves on a flat bench are great, but machine press",
         "forAge": "25-30",
-        "timeRequired": "30"
+        "timeRequired": 30
     },
     {
         "id": "5",
@@ -37,7 +37,7 @@
         "title": "Dip",
         "description": "Dips were a staple in the training programs of the golden-age greats for good",
         "forAge": "18-25",
-        "timeRequired": "30"
+        "timeRequired": 30
     },
     {
         "id": "6",
@@ -45,6 +45,6 @@
         "title": "Chest Fly",
         "description": "Looking for a way to isolate the pecs after your presses? It's time to fly.",
         "forAge": "25-30",
-        "timeRequired": "30"
+        "timeRequired": 30
     }
 ]

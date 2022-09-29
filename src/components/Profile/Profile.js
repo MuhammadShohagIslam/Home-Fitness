@@ -1,8 +1,14 @@
 import React from "react";
-import "./Profile.css";
 import ProfileImg from "../../img/Avatar.png";
+import "./Profile.css";
 
-const Profile = () => {
+const Profile = ({ exerciseActivities }) => {
+    const calculateTotalExerciseActivitiesTime = () => {
+        const totalTimes = exerciseActivities.reduce((acc, cur) => {
+            return acc + cur.timeRequired;
+        }, 0);
+        return totalTimes;
+    };
     return (
         <>
             <div className="profile-area">
@@ -18,7 +24,8 @@ const Profile = () => {
                 <div className="profile-details mt-4">
                     <div className="profile-details-info">
                         <h5 className="mb-2">
-                            <span>75</span><sub>kg</sub>
+                            <span>75</span>
+                            <sub>kg</sub>
                         </h5>
                         <p className="mb-0">Weight</p>
                     </div>
@@ -28,7 +35,8 @@ const Profile = () => {
                     </div>
                     <div className="profile-details-info">
                         <h5 className="mb-2">
-                            <span>25</span><sub>yrs</sub>
+                            <span>25</span>
+                            <sub>yrs</sub>
                         </h5>
                         <p className="mb-0">Age</p>
                     </div>
@@ -61,7 +69,7 @@ const Profile = () => {
                     </h2>
                     <div className="exercise-time">
                         <h3>Exercise time</h3>
-                        <p>200 seconds</p>
+                        <p>{calculateTotalExerciseActivitiesTime()} seconds</p>
                     </div>
                     <div className="exercise-break-time">
                         <h3>Break time</h3>
