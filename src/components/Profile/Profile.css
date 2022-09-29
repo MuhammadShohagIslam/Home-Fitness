@@ -1,0 +1,139 @@
+.profile-area {
+    background-color: #fff;
+    padding: 30px;
+}
+.profile-top-wrapper {
+    display: flex;
+}
+.profile-top-wrapper .profile-img img {
+    width: 52px;
+    height: 52px;
+    border-radius: 10%;
+}
+.profile-top-wrapper .profile-img img {
+    width: 52px;
+    height: 52px;
+    border-radius: 10%;
+}
+.profile-top-wrapper .profile-info h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+.profile-top-wrapper .profile-info p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+.profile-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 7px;
+}
+.profile-details-info {
+    margin-top: 12px;
+}
+/* Add To Break */
+.add-to-break-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+}
+.add-to-break-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 7px;
+    padding: 20px 0px;
+}
+.add-to-break-list li {
+    padding: 9px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.add-to-break-list li:hover {
+    background-color: #41e0fd;
+    color: #000;
+}
+.add-to-break-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 7px;
+    padding: 20px 0px;
+}
+
+/* Exercise-Details */
+.exercise-details-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+}
+.exercise-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 7px;
+    padding: 13px 19px;
+    margin-bottom: 13px;
+}
+.exercise-time h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.exercise-time p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.exercise-break-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 7px;
+    padding: 13px 19px;
+}
+.exercise-break-time h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.exercise-break-time p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+/* Activities Completed */
+.activities-completed button{
+    background-color: #000;
+    border: 2px solid transparent;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 6px 0px;
+    border-radius: 7px;
+    transition: all .4s;
+}
+.activities-completed button:hover{
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
