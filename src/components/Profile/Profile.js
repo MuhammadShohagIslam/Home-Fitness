@@ -17,20 +17,20 @@ const Profile = () => {
                 </div>
                 <div className="profile-details mt-4">
                     <div className="profile-details-info">
-                        <p className="mb-1">
-                            <span>75</span>kg
-                        </p>
-                        <p>Weight</p>
+                        <h5 className="mb-2">
+                            <span>75</span><sub>kg</sub>
+                        </h5>
+                        <p className="mb-0">Weight</p>
                     </div>
                     <div className="profile-details-info">
-                        <p className="mb-1">65</p>
-                        <p>Height</p>
+                        <h5 className="mb-2">65</h5>
+                        <p className="mb-0">Height</p>
                     </div>
                     <div className="profile-details-info">
-                        <p className="mb-1">
-                            <span>25</span>yrs
-                        </p>
-                        <p>Age</p>
+                        <h5 className="mb-2">
+                            <span>25</span><sub>yrs</sub>
+                        </h5>
+                        <p className="mb-0">Age</p>
                     </div>
                 </div>
 

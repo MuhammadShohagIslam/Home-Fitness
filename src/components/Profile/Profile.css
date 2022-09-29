@@ -32,9 +32,10 @@
     background-color: #000;
     color: #fff;
     border-radius: 7px;
+    padding: 12px 0px;
 }
-.profile-details-info {
-    margin-top: 12px;
+.profile-details-info p{
+    font-size: 17px;
 }
 /* Add To Break */
 .add-to-break-title {
